@@ -14,7 +14,7 @@ const cookieParser = require("cookie-parser")
 
 const app = express();
 const corsOptions = {
-        origin:["https://shopify-u5gp.vercel.app"],
+        origin:["https://shopify-iota-snowy.vercel.app/"],
         methods:["POST","GET"],
         credentials:true
     }
