@@ -21,7 +21,7 @@ const app = express();
 app.use(express.json())
 app.use(cors(
     {
-        origin:["https://deploy-mern-lwhq.vercel.app"],
+        origin:["https://shopify-u5gp.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
