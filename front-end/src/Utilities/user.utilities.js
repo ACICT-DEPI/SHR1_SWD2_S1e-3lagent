@@ -12,7 +12,7 @@ export const userAuthCalls = (requiredData, route ,toastString) => async (dispat
         dispatch(successAction(response.data.data.currentUser));
         toast.success(toastString)
        
-        return response.data.currentUser
+        return response..data.data.currentUser
    
     } catch (error) {
         dispatch(failureAction(error.response.data.message));
