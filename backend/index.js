@@ -19,6 +19,7 @@ const app = express();
 //middleware 
 
 app.use(express.json())
+app.options('*', cors(corsOptions));
 app.use(cors(
     {
         origin:["https://shopify-u5gp.vercel.app"],
