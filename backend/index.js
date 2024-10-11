@@ -1,4 +1,5 @@
 const express = require("express")
+const mongoose = require("mongoose")
 const dotenv = require("dotenv")
 const userRouter = require("./Routers/user.router") 
 const productRouter = require("./Routers/product.router")
@@ -59,6 +60,16 @@ app.all("*" ,(req, res, next) =>{
     next(new apiError(`cant find route :${req.originalUrl}`,404))
 
 })
+//server 
+app.listen(process.env.PORT , () => {
+    console.log("server is listening")
+})
+
+// database connection
+
+mongoose.connect(process.env.DB_URL,{})
+.then(console.log("connected to database"))
+.catch((error) => console.log("error connecting to db" ,error))
 
 app.use(errorHandeler)
 
