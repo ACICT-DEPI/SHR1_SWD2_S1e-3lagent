@@ -38,7 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/uploads', express.static('uploads'));
 
 const corsOptions ={
-    origin:'http://localhost:3001', 
+    origin:'https://shopify-u5gp.vercel.app/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
