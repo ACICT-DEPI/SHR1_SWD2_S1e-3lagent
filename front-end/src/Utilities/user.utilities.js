@@ -2,7 +2,7 @@ import { requestActions ,successAction,failureAction} from "../Actions/user.Acti
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const USER_BASE_URL = "http://127.0.0.1:3000/api/user"
+export const USER_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/user"
 
 export const userAuthCalls = (requiredData, route ,toastString) => async (dispatch) => {
     dispatch(requestActions())
