@@ -5,10 +5,11 @@ import { toast } from "react-toastify";
 export const USER_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/user"
 
 export const userAuthCalls = (requiredData, route ,toastString) => async (dispatch) => {
-    console.log(USER_BASE_URL,"url");
+   
     dispatch(requestActions())
    
     try {
+         console.log(USER_BASE_URL,"url");
       const response = await axios.post(`${USER_BASE_URL}/${route}`,requiredData , {withCredentials:true});
         dispatch(successAction(response.data.data.currentUser));
         toast.success(toastString)
