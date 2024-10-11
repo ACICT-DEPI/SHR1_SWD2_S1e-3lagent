@@ -1,0 +1,44 @@
+.values-class {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.value-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 13%;
+    background-color: hsl(0, 14%, 92%);
+    padding: 35px 25px;
+
+}
+
+.icon-class {
+    font-size: 50px;
+}
+
+.value-card p {
+    color: gray;
+}
+
+@media screen and (max-width:1000px) {
+    .value-card {
+        width: 30%;
+
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .value-card {
+        width: 70%;
+        margin: auto;
+
+    }
+
+}

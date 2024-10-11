@@ -1,0 +1,68 @@
+.Hero-class {
+    width: 100%;
+    background-image: url("../../Assets/images/hero-background.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    position: fixed;
+    background-size: 100% 500px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+
+.blue-text {
+    color: blue;
+
+
+}
+
+
+
+.hero-text-class {
+
+    font-size: 35px;
+    margin-top: 30px;
+
+
+}
+
+.button-class-shop {
+    font-size: 25px;
+    background-color: black;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.button-class-shop:hover {
+    background-color: rgb(31, 30, 30);
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .Hero-class {
+        background-image: url("../../Assets/images/mobile-background.png");
+        background-size: 100% auto;
+        height: 690px;
+        justify-content: center;
+        margin-top: 0px;
+
+
+
+    }
+
+    .hero-text-class {
+
+        font-size: 20px;
+        margin-top: 10px;
+
+
+
+    }
+}
