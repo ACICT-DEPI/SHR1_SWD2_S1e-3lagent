@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 export const USER_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/user"
 
 export const userAuthCalls = (requiredData, route ,toastString) => async (dispatch) => {
+    console.log(USER_BASE_URL,"url");
     dispatch(requestActions())
    
     try {
