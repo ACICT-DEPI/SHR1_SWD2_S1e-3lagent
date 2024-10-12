@@ -20,7 +20,7 @@ const app = express();
 
 
 const corsOptions ={
-    origin:['https://shopify-esq2-front.vercel.app'], 
+    origin:['https://shopify-esq2-front.vercel.app',"http://localhost:3001"], 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
