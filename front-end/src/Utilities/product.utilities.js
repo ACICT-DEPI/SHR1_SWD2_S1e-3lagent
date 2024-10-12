@@ -10,7 +10,7 @@ export const getAllProducts = async (page , Search ,Category ,sort,limit) => {
       filterQuery += (Category?`&Category=${Category}` :"")
     }
     try {
-        const response = await  axios.get(`${PRODUCT_BASE_URL}?page=${page}&limit=${limit}${filterQuery}&sort[${sort}]=-1`, { withCredentials: true })
+        const response = await  axios.get(`https://shopify-jade-six.vercel.app/api/product?page=${page}&limit=${limit}${filterQuery}&sort[${sort}]=-1`, { withCredentials: true })
         
           return response.data.data
      
