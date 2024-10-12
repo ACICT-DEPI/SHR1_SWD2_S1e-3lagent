@@ -9,7 +9,7 @@ export const userAuthCalls = (requiredData, route ,toastString) => async (dispat
     dispatch(requestActions())
    
     try {
-      console.log("url",process.env.REACT_APP_USER_BASE_URL)
+     
       const response = await axios.post(`${USER_BASE_URL}/${route}`,requiredData , {withCredentials:true});
         dispatch(successAction(response.data.data.currentUser));
         toast.success(toastString)
@@ -21,7 +21,7 @@ export const userAuthCalls = (requiredData, route ,toastString) => async (dispat
         toast.error(error.response.data.message)
         throw error
     }
-  };
+  }
 
 
 
