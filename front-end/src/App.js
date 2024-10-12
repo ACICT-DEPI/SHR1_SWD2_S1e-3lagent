@@ -21,7 +21,7 @@ import { useEffect } from "react";
 function App() {
 
   useEffect(() =>{
-    console.log("app rendered")
+    console.log("app has rendered")
 
      console.log("url",process.env.REACT_APP_USER_BASE_URL)
 
