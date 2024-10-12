@@ -23,6 +23,8 @@ function App() {
   useEffect(() =>{
     console.log("app rendered")
 
+     console.log("url",process.env.REACT_APP_USER_BASE_URL)
+
   },[])
   return (
     
