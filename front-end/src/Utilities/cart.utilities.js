@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const CART_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/cart"
+export const CART_BASE_URL = `${process.env.BASE_URL}/api/cart`
 
 export const addToCart = (Prodcut) =>{
 

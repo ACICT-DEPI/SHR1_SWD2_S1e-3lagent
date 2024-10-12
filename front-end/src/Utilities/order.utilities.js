@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const ORDER_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/order"
+export const ORDER_BASE_URL = `${process.env.BASE_URL}/order`
 
  export const makeOrder = (Products, ShippingInfo) =>{
    

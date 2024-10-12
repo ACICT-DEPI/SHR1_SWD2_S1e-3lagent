@@ -1,7 +1,7 @@
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const WISHLIST_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/wishList"
+export const WISHLIST_BASE_URL =`${process.env.BASE_URL}/api/wishList`
 
 export const addToWishList = (product ) =>{
     console.log(product)

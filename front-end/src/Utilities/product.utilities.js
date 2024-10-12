@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 import axios from "axios";
-const PRODUCT_BASE_URL = `https://shopify-iota-snowy.vercel.app/api/product`
+const PRODUCT_BASE_URL = `${process.env.BASE_URL}/api/product`
 
 export const getAllProducts = async (page , Search ,Category ,sort,limit) => {
     console.log(sort)

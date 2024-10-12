@@ -2,12 +2,14 @@ import { requestActions ,successAction,failureAction} from "../Actions/user.Acti
 import axios from "axios";
 import { toast } from "react-toastify";
 
-export const USER_BASE_URL = "https://shopify-iota-snowy.vercel.app/api/user"
+export const USER_BASE_URL = `${process.env.REACT_APP_USER_BASE_URL}/api/user`
 
 export const userAuthCalls = (requiredData, route ,toastString) => async (dispatch) => {
+  
     dispatch(requestActions())
    
     try {
+      console.log("url",process.env.REACT_APP_USER_BASE_URL)
       const response = await axios.post(`${USER_BASE_URL}/${route}`,requiredData , {withCredentials:true});
         dispatch(successAction(response.data.data.currentUser));
         toast.success(toastString)
